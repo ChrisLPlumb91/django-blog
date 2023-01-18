@@ -14,7 +14,7 @@ class PostAdmin(SummernoteModelAdmin):
 
 
 @admin.register(Comment)
-class CommentAdmin(model.ModelAdmin):
+class CommentAdmin(admin.ModelAdmin):
 
     list_display = ('name', 'body', 'post', 'created_on', 'approved')
     list_filter = ('approved', 'created_on')
